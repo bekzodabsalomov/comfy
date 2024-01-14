@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .align-element {
+        @apply max-w-5xl mx-auto px-4
+    }
+    .hidden-carusel {
+        @apply h-[28rem] lg:carousel carousel-center p-4 space-x-4
+    }
+}
+
+.dark-btns{
+    @apply  btn btn-info 
+}
+
+
+.active {
+    background: #021431;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #dee5f0;
+}
+
+.active {
+    background-color: #021434;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-border{
+    border: 1px solid #021431 ;
+    border-radius: 8px;
+    background-color: rgba(154, 208, 233, 0.322);
+    margin-top: 80px;
+    border: none;
+    padding: 30px ;
+}
